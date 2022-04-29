@@ -1,8 +1,11 @@
 #navbar {
-	border-bottom: 1px white solid;
+	// border-bottom: 1px white solid;
 	height: 10vh;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 }
