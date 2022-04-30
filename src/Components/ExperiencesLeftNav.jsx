@@ -1,8 +1,17 @@
+import "./styles/ExperiencesLeftNav.scss";
 export default function ExperiencesLeftNav(props) {
-	const { experienceListTabs } = props;
+	const { experienceListTabs, handleClickInstance } = props;
 	const tabButtons = experienceListTabs.map(tab => {
-		return <button key={tab}>{tab}</button>;
+		return (
+			<button
+				className="experiences-list-tab"
+				key={tab}
+				onClick={() => handleClickInstance(tab)}
+			>
+				{tab}
+			</button>
+		);
 	});
 
-	return <div id="experiences-nav">{tabButtons}</div>;
+	return <div id="experiences-left-nav">{tabButtons}</div>;
 }
