@@ -11,7 +11,6 @@ function App() {
 			<Leftnav></Leftnav>
 			<main>
 				<About></About>
-				<br></br>
 				<Experiences></Experiences>
 			</main>
 		</div>
