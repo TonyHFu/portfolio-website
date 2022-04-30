@@ -17,6 +17,7 @@ function App() {
 				<Projects></Projects>
 				<Contact></Contact>
 			</main>
+			<footer></footer>
 		</div>
 	);
 }
