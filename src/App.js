@@ -1,5 +1,6 @@
 import "./App.scss";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 import Experiences from "./Components/Experiences";
 import Leftnav from "./Components/Leftnav";
 import Navbar from "./Components/Navbar";
@@ -14,6 +15,7 @@ function App() {
 				<About></About>
 				<Experiences></Experiences>
 				<Projects></Projects>
+				<Contact></Contact>
 			</main>
 		</div>
 	);
