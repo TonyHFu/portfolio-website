@@ -4,7 +4,7 @@ export default function About(props) {
 		<section id="about">
 			<div id="about-link"></div>
 			<article className="about">
-				<p>Nice to meet you.</p>
+				<p>Hi, nice to meet you.</p>
 				<h1>My name is Tony,</h1>
 				<p>
 					I am a web developer with a diverse background in medicine,

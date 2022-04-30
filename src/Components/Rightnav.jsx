@@ -4,7 +4,7 @@ export default function Rightnav(props) {
 		<div id="right-nav">
 			<a href="#about">about</a>
 			<a href="#experiences">experiences</a>
-			<a>projects</a>
+			<a href="#projects">projects</a>
 			<a>contact</a>
 		</div>
 	);
