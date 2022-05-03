@@ -1,3 +1,4 @@
+import "./styles/ExperiencesNav.scss";
 export default function ExperiencesNav(props) {
 	const { handleClickEducation, handleClickWork } = props;
 	return (

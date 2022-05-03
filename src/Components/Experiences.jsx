@@ -6,7 +6,7 @@ import ExperiencesListItem from "./ExperiencesListItem";
 
 const experiences = {
 	education: {
-		WebDev: {
+		"Web Dev": {
 			institution: "Lighthouse Labs",
 			program: "Web Development",
 			dates: "Feb 2022 - May 2022",
