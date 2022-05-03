@@ -63,7 +63,7 @@ export default function Contact(props) {
 			<div id="contact-link"></div>
 			{sent && (
 				<div id="contact-sent">
-					<p>Thanks for your message, I will get back to you soon!</p>
+					<p>Thank you for your message, I will get back to you soon!</p>
 				</div>
 			)}
 			{!sent && (

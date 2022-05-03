@@ -29,12 +29,28 @@ const projects = {
 				"A food ordering app built with an express server and JQuery Ajax calls",
 		},
 	],
-	// "Bootcamp Individual Projects": [
-	// 	{ title: "Jungle", image: "", description: "" },
-	// 	{ title: "Scheduler", image: "", description: "" },
-	// 	{ title: "Tweeter", image: "", description: "" },
-	// 	{ title: "TinyApp", image: "", description: "" },
-	// ],
+	"Bootcamp Individual Projects": [
+		{
+			title: "Jungle",
+			image: "/projects/jungle.png",
+			description: "A marketplace app built using Ruby on Rails",
+		},
+		{
+			title: "Scheduler",
+			image: "/projects/scheduler.png",
+			description: "A single-page-application built with React",
+		},
+		{
+			title: "Tweeter",
+			image: "/projects/tweeter.png",
+			description: "A twitter clone built using JQuery",
+		},
+		{
+			title: "TinyApp",
+			image: "/projects/tinyapp.png",
+			description: "First project - a tiny URL clone",
+		},
+	],
 };
 
 const projectsList = Object.keys(projects).map((projectType, i) => {
