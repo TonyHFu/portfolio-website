@@ -11,7 +11,7 @@ const projects = {
 		},
 		{
 			title: "Digit Recognizer",
-			image: "/projects/digit.png",
+			image: "/projects/mnist.png",
 			description:
 				"Digit classifier trained on MNIST dataset with canvas for frontend drawing and flask python server for prediction",
 			link: "https://github.com/TonyHFu/digit-recognizer",
@@ -46,18 +46,18 @@ const projects = {
 			description: "A single-page-application built with React",
 			link: "https://github.com/TonyHFu/Interview-Scheduler",
 		},
-		{
-			title: "Tweeter",
-			image: "/projects/tweeter.png",
-			description: "A twitter clone built using JQuery",
-			link: "https://github.com/TonyHFu/tweeter",
-		},
-		{
-			title: "TinyApp",
-			image: "/projects/tinyapp.png",
-			description: "First project - a tiny URL clone",
-			link: "https://github.com/TonyHFu/tinyapp",
-		},
+		// {
+		// 	title: "Tweeter",
+		// 	image: "/projects/tweeter.png",
+		// 	description: "A twitter clone built using JQuery",
+		// 	link: "https://github.com/TonyHFu/tweeter",
+		// },
+		// {
+		// 	title: "TinyApp",
+		// 	image: "/projects/tinyapp.png",
+		// 	description: "First project - a tiny URL clone",
+		// 	link: "https://github.com/TonyHFu/tinyapp",
+		// },
 	],
 };
 
