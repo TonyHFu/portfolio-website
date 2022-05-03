@@ -102,6 +102,7 @@ export default function Experiences(props) {
 				<ExperiencesNav
 					handleClickEducation={handleClickEducation}
 					handleClickWork={handleClickWork}
+					experienceType={experienceType}
 				></ExperiencesNav>
 				<div id="experience-display">
 					<ExperiencesLeftNav

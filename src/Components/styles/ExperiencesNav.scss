@@ -1,10 +1,21 @@
 @use "variables";
 
-button {
-	background-color: variables.$purple;
-	padding: 10px;
-	width: 100px;
-	&:hover {
+#experiences-nav {
+	button {
 		background-color: #e771ba;
+		border-bottom: 3px solid variables.$purple;
+		border-right: 3px solid variables.$purple;
+		padding: 10px;
+		width: 100px;
+		&:hover {
+			background-color: variables.$purple;
+			border-bottom: 3px solid #e771ba;
+			border-right: 3px solid #e771ba;
+		}
+	}
+	.selected {
+		background-color: variables.$purple;
+		border-bottom: 3px solid #e771ba;
+		border-right: 3px solid #e771ba;
 	}
 }
