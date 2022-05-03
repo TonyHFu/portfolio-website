@@ -1,6 +1,8 @@
+@use "./Components/styles/variables";
+
 body {
-	background-color: rgb(0, 0, 0);
-	color: rgb(185, 185, 185);
+	background-color: #050404;
+	color: variables.$font-color;
 }
 
 main {
@@ -12,9 +14,6 @@ main {
 		padding-top: 20vh;
 		padding-bottom: 20vh;
 	}
-	// display: flex;
-	// flex-direction: column;
-	// align-items: center;
 }
 
 br {
