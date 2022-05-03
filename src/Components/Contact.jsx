@@ -61,30 +61,37 @@ export default function Contact(props) {
 	return (
 		<div id="contact">
 			<div id="contact-link"></div>
-			<form id="contact-form" ref={form} onSubmit={handleSubmit}>
-				<label for="name">Name</label>
-				<input
-					type="text"
-					name="name"
-					onChange={handleChangeName}
-					value={name}
-				></input>
-				<label for="email">Email</label>
-				<input
-					type="email"
-					name="email"
-					onChange={handleChangeEmail}
-					value={email}
-				></input>
-				<label for="message">Message</label>
-				<textarea
-					type="text"
-					name="message"
-					onChange={handleChangeMessage}
-					value={message}
-				></textarea>
-				<input type="submit"></input>
-			</form>
+			{sent && (
+				<div id="contact-sent">
+					<p>Thanks for your message, I will get back to you soon!</p>
+				</div>
+			)}
+			{!sent && (
+				<form id="contact-form" ref={form} onSubmit={handleSubmit}>
+					<label for="name">Name</label>
+					<input
+						type="text"
+						name="name"
+						onChange={handleChangeName}
+						value={name}
+					></input>
+					<label for="email">Email</label>
+					<input
+						type="email"
+						name="email"
+						onChange={handleChangeEmail}
+						value={email}
+					></input>
+					<label for="message">Message</label>
+					<textarea
+						type="text"
+						name="message"
+						onChange={handleChangeMessage}
+						value={message}
+					></textarea>
+					<input type="submit"></input>
+				</form>
+			)}
 		</div>
 	);
 }
