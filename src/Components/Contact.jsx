@@ -59,7 +59,7 @@ export default function Contact(props) {
 	};
 
 	return (
-		<div id="contact">
+		<section id="contact">
 			<div id="contact-link"></div>
 			{sent && (
 				<div id="contact-sent">
@@ -92,6 +92,6 @@ export default function Contact(props) {
 					<input type="submit"></input>
 				</form>
 			)}
-		</div>
+		</section>
 	);
 }

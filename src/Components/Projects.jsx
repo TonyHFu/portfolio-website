@@ -33,7 +33,7 @@ const projects = {
 			link: "https://github.com/TonyHFu/LHL-midterm",
 		},
 	],
-	"Bootcamp Individual Projects": [
+	"Bootcamp Solo Projects": [
 		{
 			title: "Jungle",
 			image: "/projects/jungle.png",
