@@ -108,6 +108,7 @@ export default function Experiences(props) {
 					<ExperiencesLeftNav
 						experienceListTabs={experienceListTabs}
 						handleClickInstance={handleClickInstance}
+						experienceInstance={experienceInstance}
 					></ExperiencesLeftNav>
 					<ExperiencesListItem
 						experienceDetails={experiences[experienceType][experienceInstance]}
