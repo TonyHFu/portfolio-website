@@ -6,13 +6,17 @@ export default function ExperiencesNav(props) {
 	return (
 		<div id="experiences-nav">
 			<button
-				className={classNames({ selected: experienceType === "education" })}
+				className={classNames("experience-type-button", {
+					selected: experienceType === "education",
+				})}
 				onClick={handleClickEducation}
 			>
 				Education
 			</button>
 			<button
-				className={classNames({ selected: experienceType === "work" })}
+				className={classNames("experience-type-button", {
+					selected: experienceType === "work",
+				})}
 				onClick={handleClickWork}
 			>
 				Work

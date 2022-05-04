@@ -42,7 +42,6 @@ form button {
 	}
 
 	&::before {
-		transition: all 0.15s linear 0s;
 		content: "";
 		position: absolute;
 		top: 1px;
@@ -55,7 +54,6 @@ form button {
 	}
 
 	&::after {
-		transition: all 0.15s linear 0s;
 		content: "";
 		position: absolute;
 		bottom: -3px;
@@ -87,16 +85,6 @@ textarea {
 	}
 }
 
-// input::after {
-// 	content: "hello";
-// 	position: absolute;
-// 	left: 200px;
-// 	width: 100px;
-// 	height: 100px;
-// 	background-color: blue;
-// 	color: red;
-// }
-
 #contact-sent {
 	text-align: center;
 }
@@ -105,13 +93,3 @@ label {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-
-// button::after {
-// 	content: "hello";
-// 	position: absolute;
-// 	left: 200px;
-// 	width: 100px;
-// 	height: 100px;
-// 	background-color: blue;
-// 	color: red;
-// }
