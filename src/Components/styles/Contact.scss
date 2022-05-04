@@ -111,3 +111,9 @@ label {
 		color: variables.$purple;
 	}
 }
+
+@media only screen and (max-width: 420px) {
+	textarea {
+		height: 40vh;
+	}
+}
