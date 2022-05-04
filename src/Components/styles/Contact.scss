@@ -5,6 +5,16 @@
 	flex-direction: column;
 	color: variables.$font-color;
 	font-family: inherit;
+
+	.control-group {
+		display: flex;
+		flex-direction: column;
+		&:focus-within {
+			label {
+				color: variables.$purple;
+			}
+		}
+	}
 }
 
 input[type="text"],
@@ -92,4 +102,8 @@ textarea {
 label {
 	padding-top: 5px;
 	padding-bottom: 5px;
+
+	&:focus {
+		color: variables.$purple;
+	}
 }
