@@ -72,3 +72,18 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 700px) {
+	#experiences-left-nav {
+		font-size: 2vw;
+		button {
+			width: 20vw;
+			word-wrap: break-word;
+		}
+		.selected {
+			width: 20vw;
+			word-wrap: break-word;
+			left: 0px;
+		}
+	}
+}
