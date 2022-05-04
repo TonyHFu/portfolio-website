@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import axios from "axios";
+// import axios from "axios";
 import "./styles/Contact.scss";
 import emailjs from "@emailjs/browser";
 
