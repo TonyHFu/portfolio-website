@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 // import axios from "axios";
 import "./styles/Contact.scss";
 import emailjs from "@emailjs/browser";
-import "dotenv/config";
+// import "dotenv/config";
 
 export default function Contact(props) {
 	const [name, setName] = useState("");
@@ -41,12 +41,13 @@ export default function Contact(props) {
 		// 	})
 		// 	.catch(err => console.log(err));
 
+		console.log(process.env);
 		emailjs
 			.sendForm(
-				process.env.SERVICE,
-				process.env.TEMPLATE,
+				process.env.REACT_APP_SERVICE,
+				process.env.REACT_APP_TEMPLATE,
 				form.current,
-				process.env.PUBLIC
+				process.env.REACT_APP_PUBLIC
 			)
 			.then(
 				result => {
