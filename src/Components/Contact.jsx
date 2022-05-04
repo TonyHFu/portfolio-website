@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 // import axios from "axios";
 import "./styles/Contact.scss";
 import emailjs from "@emailjs/browser";
+import "dotenv/config";
 
 export default function Contact(props) {
 	const [name, setName] = useState("");
@@ -42,10 +43,10 @@ export default function Contact(props) {
 
 		emailjs
 			.sendForm(
-				"service_cki031g",
-				"template_h5wl3nt",
+				process.env.SERVICE,
+				process.env.TEMPLATE,
 				form.current,
-				"20voThGYjy8Qli-bh"
+				process.env.PUBLIC
 			)
 			.then(
 				result => {
