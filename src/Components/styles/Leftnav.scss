@@ -18,5 +18,8 @@
 	a {
 		text-decoration: none;
 		color: inherit;
+		&:hover {
+			color: #ba759f;
+		}
 	}
 }
