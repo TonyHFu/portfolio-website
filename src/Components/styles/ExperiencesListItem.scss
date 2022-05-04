@@ -2,9 +2,14 @@
 
 #experiences-list-item {
 	background-color: rgb(37, 38, 38);
-	min-width: 500px;
+	min-width: 446px;
+	max-width: 446px;
 
-	p {
+	p,
+	li {
 		padding: 10px;
+	}
+	ul {
+		list-style-type: disc;
 	}
 }

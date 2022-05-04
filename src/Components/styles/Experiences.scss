@@ -19,3 +19,29 @@ p {
 	height: 50vh;
 	padding-top: 4px;
 }
+
+.experiences {
+	position: relative;
+
+	border-image: linear-gradient(to bottom right, #c94e9a, #ffa1db);
+	border-image-slice: 1;
+
+	&::after {
+		position: absolute;
+		top: 2px;
+		right: 1px;
+
+		content: "";
+		width: 597px;
+		height: 99%;
+		border-top: 2px solid;
+		border-right: 2px solid;
+		border-left: 2px solid;
+		border-bottom: 2px solid;
+
+		border-width: 2px;
+		border-image: linear-gradient(to bottom right, #c94e9a, #ffa1db);
+		border-image-slice: 1;
+		z-index: -2;
+	}
+}
