@@ -4,12 +4,17 @@ export default function About(props) {
 		<section id="about">
 			<div id="about-link"></div>
 			<article className="about">
-				<p>Hi, nice to meet you.</p>
+				<p>
+					<span className="hi">Hi, </span>nice to meet you.
+				</p>
 				<h1>My name is Tony,</h1>
 				<p>
-					I am a web developer with a diverse background in medicine,
-					statistics, and psychology. I am a lifelong learner with a passion for
-					building intelligent machines.
+					I am a web developer with a diverse background in{" "}
+					<span className="about-background">
+						medicine, statistics, and psychology.
+					</span>{" "}
+					I am a lifelong learner with a passion for building intelligent
+					machines.
 				</p>
 				<p>
 					My interest in programming began during a cognitive science class
