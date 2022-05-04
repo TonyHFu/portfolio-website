@@ -5,7 +5,7 @@ export default function ProjectsListItem(props) {
 		<li className="projects-list-item">
 			<h3 className="project-title">{project.title}</h3>
 			<a href={project.link}>
-				<img src={project.image}></img>
+				<img alt={project.name} src={project.image}></img>
 			</a>
 			<p>{project.description}</p>
 		</li>
