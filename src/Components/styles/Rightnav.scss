@@ -17,8 +17,8 @@
 				content: "";
 				position: absolute;
 				bottom: -5px;
-				right: -6px;
-				width: 4px;
+				right: -8px;
+				width: 8px;
 				height: 4px;
 				background-color: black;
 				z-index: 0;
@@ -35,10 +35,10 @@
 				background: linear-gradient(to left, #c94e9a, #ffa1db);
 
 				overflow: hidden;
-				-webkit-transform: skew(-40deg, 0deg);
-				-ms-transform: skew(-40deg, 0deg);
-				-o-transform: skew(-40deg, 0deg);
-				transform: skew(-40deg, 0deg);
+				-webkit-transform: skew(-60deg, 0deg);
+				-ms-transform: skew(-60deg, 0deg);
+				-o-transform: skew(-60deg, 0deg);
+				transform: skew(-60deg, 0deg);
 
 				z-index: -1;
 			}
