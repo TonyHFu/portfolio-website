@@ -75,14 +75,14 @@
 
 @media only screen and (max-width: 700px) {
 	#experiences-left-nav {
-		font-size: 2vw;
+		font-size: 2em;
 		button {
 			width: 20vw;
-			word-wrap: break-word;
+			height: 80px;
 		}
 		.selected {
 			width: 20vw;
-			word-wrap: break-word;
+
 			left: 0px;
 		}
 	}
