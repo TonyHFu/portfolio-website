@@ -9,6 +9,7 @@ export default function Contact(props) {
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	const [sent, setSent] = useState(false);
+	const [sending, setSending] = useState(false);
 
 	const form = useRef();
 
@@ -41,7 +42,8 @@ export default function Contact(props) {
 		// 	})
 		// 	.catch(err => console.log(err));
 
-		console.log(process.env);
+		setSending(true);
+
 		emailjs
 			.sendForm(
 				process.env.REACT_APP_SERVICE,
@@ -51,7 +53,7 @@ export default function Contact(props) {
 			)
 			.then(
 				result => {
-					console.log(result.text);
+					setSending(false);
 					setSent(true);
 				},
 				error => {
@@ -63,15 +65,16 @@ export default function Contact(props) {
 	return (
 		<section id="contact">
 			<div id="contact-link"></div>
+			{sending && <div id="sending">Sending</div>}
 			{sent && (
 				<div id="contact-sent">
 					<p>Thank you for your message, I will get back to you soon!</p>
 				</div>
 			)}
-			{!sent && (
+			{!sent && !sending && (
 				<form id="contact-form" ref={form} onSubmit={handleSubmit}>
 					<div className="control-group">
-						<label for="name">Name</label>
+						<label htmlFor="name">Name</label>
 						<input
 							type="text"
 							name="name"
@@ -80,7 +83,7 @@ export default function Contact(props) {
 						></input>
 					</div>
 					<div className="control-group">
-						<label for="email">Email</label>
+						<label htmlFor="email">Email</label>
 						<input
 							type="email"
 							name="email"
@@ -90,7 +93,7 @@ export default function Contact(props) {
 					</div>
 					<br></br>
 					<div className="control-group">
-						<label for="message">Message</label>
+						<label htmlFor="message">Message</label>
 						<textarea
 							type="text"
 							name="message"
