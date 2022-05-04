@@ -13,3 +13,10 @@
 		list-style-type: disc;
 	}
 }
+@media only screen and (max-width: 900px) {
+	#experiences-list-item {
+		min-width: 50vw;
+		max-width: 50vw;
+		font-size: 1.3em;
+	}
+}

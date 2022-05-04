@@ -17,3 +17,33 @@ ul {
 .project-type-heading {
 	color: variables.$purple;
 }
+
+@media only screen and (max-width: 1150px) {
+	.projects-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#projects {
+		min-width: auto;
+	}
+
+	.projects-type {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.projects-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#projects {
+		min-width: auto;
+	}
+
+	.projects-type {
+		padding: 0;
+	}
+}

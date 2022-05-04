@@ -16,15 +16,12 @@ p {
 #experience-display {
 	display: flex;
 	flex-direction: row;
-	height: 50vh;
+	height: 55vh;
 	padding-top: 4px;
 }
 
 .experiences {
 	position: relative;
-
-	border-image: linear-gradient(to bottom right, #c94e9a, #ffa1db);
-	border-image-slice: 1;
 
 	&::after {
 		position: absolute;
@@ -43,5 +40,19 @@ p {
 		border-image: linear-gradient(to bottom right, #c94e9a, #ffa1db);
 		border-image-slice: 1;
 		z-index: -2;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.experiences {
+		font-size: 1.6vw;
+		&::after {
+			left: -1px;
+			top: 2px;
+			width: 60vw;
+		}
+	}
+	#experience-display {
+		height: auto;
 	}
 }

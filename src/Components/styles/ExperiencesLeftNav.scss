@@ -58,3 +58,17 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 900px) {
+	#experiences-left-nav {
+		button {
+			width: 10vw;
+			word-wrap: break-word;
+		}
+		.selected {
+			width: 10vw;
+			word-wrap: break-word;
+			left: 0px;
+		}
+	}
+}
