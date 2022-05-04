@@ -8,3 +8,11 @@
 #projects {
 	min-width: 1200px;
 }
+
+ul {
+	list-style-type: none;
+}
+
+.project-type-heading {
+	color: variables.$purple;
+}

@@ -64,7 +64,7 @@ const projects = {
 const projectsList = Object.keys(projects).map((projectType, i) => {
 	return (
 		<ul className="projects-type" key={i}>
-			<h2>{projectType}</h2>
+			<h2 className="project-type-heading">{projectType}</h2>
 			{projects[projectType].map(project => {
 				return <ProjectsListItem project={project}></ProjectsListItem>;
 			})}

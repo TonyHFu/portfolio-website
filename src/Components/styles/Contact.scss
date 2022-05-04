@@ -3,25 +3,115 @@
 #contact-form {
 	display: flex;
 	flex-direction: column;
+	color: variables.$font-color;
+	font-family: inherit;
 }
 
-input[type="text"] {
-	width: 200px;
-}
+input[type="text"],
 input[type="email"] {
+	color: inherit;
 	width: 200px;
+	font-size: 1em;
+
+	padding-top: 5px;
+
+	&:focus {
+		outline: none;
+		border-width: 2px;
+		border-image: linear-gradient(to right, #c94e9a, #ffa1db);
+		border-image-slice: 1;
+	}
+	background-color: transparent;
+	border: 0;
+	border-bottom: variables.$dark-green 2px solid;
 }
 
-input[type="submit"] {
+form button {
+	margin-top: 10px;
 	width: 100px;
+	background-color: variables.$purple;
+
+	border: none;
+	color: variables.$font-color;
+	padding: 5px;
+	box-shadow: 4px 4px 0px 0px #ba759f;
+
+	position: relative;
+	&:hover {
+		background-color: #ffa1db;
+	}
+
+	&::before {
+		transition: all 0.15s linear 0s;
+		content: "";
+		position: absolute;
+		top: 1px;
+		right: -3px;
+		width: 6px;
+		height: 6px;
+		background-color: #ba759f;
+		transform: rotate(45deg);
+		z-index: -1;
+	}
+
+	&::after {
+		transition: all 0.15s linear 0s;
+		content: "";
+		position: absolute;
+		bottom: -3px;
+		left: 1px;
+		width: 6px;
+		height: 6px;
+		background-color: #ba759f;
+		transform: rotate(45deg);
+		z-index: -1;
+	}
 }
 
 textarea {
 	max-width: 600px;
 	max-height: 600px;
 	height: 400px;
+	color: inherit;
+	font-size: 1em;
+	font-family: inherit;
+
+	background-color: transparent;
+	border: variables.$dark-green 2px solid;
+
+	&:focus {
+		outline: none;
+		border-width: 2px;
+		border-image: linear-gradient(to bottom right, #c94e9a, #ffa1db);
+		border-image-slice: 1;
+	}
 }
+
+// input::after {
+// 	content: "hello";
+// 	position: absolute;
+// 	left: 200px;
+// 	width: 100px;
+// 	height: 100px;
+// 	background-color: blue;
+// 	color: red;
+// }
 
 #contact-sent {
 	text-align: center;
 }
+
+label {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+// button::after {
+// 	content: "hello";
+// 	position: absolute;
+// 	left: 200px;
+// 	width: 100px;
+// 	height: 100px;
+// 	background-color: blue;
+// 	color: red;
+// }

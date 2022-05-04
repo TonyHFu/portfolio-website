@@ -82,6 +82,7 @@ export default function Contact(props) {
 						onChange={handleChangeEmail}
 						value={email}
 					></input>
+					<br></br>
 					<label for="message">Message</label>
 					<textarea
 						type="text"
@@ -89,7 +90,7 @@ export default function Contact(props) {
 						onChange={handleChangeMessage}
 						value={message}
 					></textarea>
-					<input type="submit"></input>
+					<button type="submit">Send</button>
 				</form>
 			)}
 		</section>
