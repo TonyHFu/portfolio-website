@@ -33,11 +33,27 @@ jobs:
           paths:
             - ./build
 
+  deploy:
+    machine:
+      enabled: true
+
+    working_directory: ~/repo
+
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "43:d4:e4:bd:ec:ae:52:3d:6d:34:1a:4d:e3:01:ae:28"
+      - checkout
+      - run:
+          name: Push Master to Production
+          command: |
+            git push https://github.com/TonyHFu/portfolio-website.git master:production
+
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 
 workflows:
-  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
+  test_build_and_deploy: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - node/test:
@@ -47,4 +63,15 @@ workflows:
           version: "16.10"
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
-      - build
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - build
