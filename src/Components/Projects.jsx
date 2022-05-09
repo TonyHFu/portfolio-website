@@ -7,7 +7,9 @@ const projects = {
 			image: "/projects/car_finishes.gif",
 			description:
 				"Deep Q Learning in Tensorflow to learn a custom driving game created with ThreeJS and CannonJS ",
-			link: "https://github.com/TonyHFu/Driving-game-AI",
+			link: "https://self-driving-ai-dql.netlify.app/",
+			github: "https://github.com/TonyHFu/Driving-game-AI",
+			hosted: "https://self-driving-ai-dql.netlify.app/",
 		},
 		{
 			title: "Digit Recognizer",
@@ -15,6 +17,8 @@ const projects = {
 			description:
 				"Digit classifier trained on MNIST dataset with canvas for frontend drawing and flask python server for prediction",
 			link: "https://github.com/TonyHFu/digit-recognizer",
+			github: "https://github.com/TonyHFu/digit-recognizer",
+			hosted: "https://self-driving-ai-dql.netlify.app/",
 		},
 	],
 	"Bootcamp Group Projects": [
@@ -24,6 +28,8 @@ const projects = {
 			description:
 				"A language exchange chat app based on HelloTalk using React frontend, Rails backend, and Action Cables for Websockets",
 			link: "https://github.com/TonyHFu/Chat-app-prototype",
+			github: "https://github.com/TonyHFu/Chat-app-prototype",
+			hosted: "https://self-driving-ai-dql.netlify.app/",
 		},
 		{
 			title: "Burger Place",
@@ -31,6 +37,8 @@ const projects = {
 			description:
 				"A food ordering app built with an express server and JQuery Ajax calls",
 			link: "https://github.com/TonyHFu/LHL-midterm",
+			github: "https://github.com/TonyHFu/LHL-midterm",
+			hosted: "https://self-driving-ai-dql.netlify.app/",
 		},
 	],
 	"Bootcamp Solo Projects": [
@@ -39,12 +47,16 @@ const projects = {
 			image: "/projects/jungle.png",
 			description: "A marketplace app built using Ruby on Rails",
 			link: "https://github.com/TonyHFu/Jungle",
+			github: "https://github.com/TonyHFu/Jungle",
+			hosted: "https://self-driving-ai-dql.netlify.app/",
 		},
 		{
 			title: "Scheduler",
 			image: "/projects/scheduler.png",
 			description: "A single-page-application built with React",
-			link: "https://github.com/TonyHFu/Interview-Scheduler",
+			link: "https://lighthouse-scheduler.netlify.app/",
+			github: "https://github.com/TonyHFu/Interview-Scheduler",
+			hosted: "https://lighthouse-scheduler.netlify.app/",
 		},
 		// {
 		// 	title: "Tweeter",
