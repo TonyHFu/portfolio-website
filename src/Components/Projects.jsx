@@ -27,7 +27,7 @@ const projects = {
 			image: "/projects/bridge.png",
 			description:
 				"A language exchange chat app based on HelloTalk using React frontend, Rails backend, and Action Cables for Websockets",
-			link: "https://github.com/TonyHFu/Chat-app-prototype",
+			link: "https://profound-cupcake-18d4a3.netlify.app/",
 			github: "https://github.com/TonyHFu/Chat-app-prototype",
 			hosted: "https://self-driving-ai-dql.netlify.app/",
 		},
